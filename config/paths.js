@@ -1,5 +1,7 @@
 'use strict';
 
+const version = 'v20211028c';
+
 const path = require('path');
 const fs = require('fs');
 const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
@@ -67,7 +69,8 @@ module.exports = {
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
   swSrc: resolveModule(resolveApp, 'src/service-worker'),
-  publicUrlOrPath: '//storage.360buyimg.com/workbench/'
+  publicUrlOrPath: '//storage.360buyimg.com/workbench/',
+  version
 };
 
 
